@@ -13,8 +13,8 @@ print(shop[3])
 print(shop[-2])
 shop[0]="긴팔" # 리스트 내 값 수정
 print(shop)
-#shop[100]="신발" #리스트는 순서가 중요해서 모든 인덱스가 다 채워져있어야한다.
-#print(shop)
+shop[100]="신발" #리스트는 순서가 중요해서 모든 인덱스가 다 채워져있어야한다.
+print(shop)
 del shop[1]
 print(shop)
 del shop[2:]

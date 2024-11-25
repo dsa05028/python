@@ -20,12 +20,12 @@ num=input("숫자를 입력하세요")
 a=int(num)%2==0
 print("True면 짝수, False는 홀수", a)'''
 
-'''print(int(5.5))
+'''print(int(5.5)) 
 print(type(int("30")))
 a="10"
 print(type(int(a)))
-print(type(a))
-num=10
+print(type(a))'''
+'''num=10
 print(type(str(num)))'''
 
 #문자열 연산
@@ -103,26 +103,31 @@ print(f"내이름은 [{name:@^20}]") #내이름은 [@@@@@@@@홍길동@@@@@@@@@]
 '''
 
 #실습. 이스케이프 연습
-'''print("|\_/|\n|q p|\t/")
+'''print("|\_/|\n|q p|\t/}")
+print("( 0 )\"\"\"\\")
+print("|\"^\"` \t |\n||_/=\_ _|")'''
+
+'''print("|\_/|\n|q p|\t/")   
+
 print("( 0 )\"\"\"\\")
 print("|\"^\"\'\t|\n|_/=\_ _|")'''
 
 ##강사님
 '''print("|\\_/|")
-print("|q p|   /")
+print("|q p|   /}")
 print("(0)\"\"\"\\   ")
 print("|\"^\"`   |")
 print("||_/=\\\\__|")'''
 
 #실습. f문자열 포매팅 
-'''name="조효정"
+'''name="name"
 name=f"[{name:=^10}]"
 print(name)
 text=f"문자열 실습입니다.{{중괄호}}를 출력해보세요."
 print(text)'''
 
 ##강사님
-'''name="조효정"
+'''name="name"
 print(f"[{name:=^30}]")
 print(f"문자열 실습입니다. {{ 중괄호 }}를 출력해보세요")
 '''
@@ -148,9 +153,10 @@ print(year+"년",month+"월",day+"일")'''
 
 #길이구하기
 '''a="Hello, Python"
-print(len(a))
+print("문자열 a의 길이는",len(a))'''
 
 #개수 세기
+'''a="Hello, Python"
 print(a.count('l'))'''
 
 #위치 찾기 find함수
@@ -161,9 +167,10 @@ print(a.find("o")) #가장 앞선 문자를 찾음
 first_o=a.find('o')
 print(first_o)
 second_o=a.find('o',first_o+1)
-print(second_o) #두번째 o를 찾는 방법
+print(second_o) #두번째 o를 찾는 방법'''
 
 #위치 찾기 index함수
+'''a="Hello, Python"
 print(a.index("P"))
 print(a.index("s")) # 문자열에 포함되지 않은 문자는 오류 발생
 '''
@@ -191,6 +198,17 @@ print("1234".isdigit()) #True ,isdigit을 가장 많이 사용
 print("1234".isnumeric()) #True
 print("-1234".isdigit()) #False, 음수는 항상 False
 '''
+
+#문자열 판별하기(문자 공백판별)
+'''print("hello".isalpha())
+print("안녕하세요".isalpha())
+print("hello123".isalpha())
+print("hello123".isalnum())
+print("hello!".isalnum())
+print("안녕하세요123".isalnum())
+print("   ".isspace())
+print("\t\n".isspace())
+print("hello".isspace())'''
 
 #문자열 판별하기(대소문자 판별)
 '''print("Hello".islower()) #False, H는 대문자
@@ -222,4 +240,5 @@ b=int(input("태어난 년도를 입력하세요"))
 c=int(input("올해 년도를 입력하세요"))
 print(f"올해는 {c}년, {a}님의 나이는 {c-b}세 입니다.")
 '''
-
+'''x=5
+print("True면 짝수, False면 홀수:",x%2==0)'''

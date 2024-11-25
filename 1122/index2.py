@@ -219,6 +219,3 @@ if fruit in fruits:
     print(f"{fruit}의 칼로리는 {fruits[fruit]}Kcal입니다.")
 else:
     print(f"{fruit}은(는) 정보가 존재하지 않습니다.")'''
-
-#반복문(while문)
-
