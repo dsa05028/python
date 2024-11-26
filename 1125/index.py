@@ -131,12 +131,12 @@ for row in matrix:
             print(elem, end=" ")'''
 
 #실습.이중for문 구구단 만들기(2단~9단), rkdtkslarhk ehddlf  
-for i in range(2,10):
+'''for i in range(2,10):
     print(f"[{i}단]")
     for j in range(1,10):
         num=i*j
         print(f"{i}*{j}={i*j}")
-    print()
+    print()'''
 
 #실습.자판기 프로그램
 '''vending_machine=["게토레이","게토레이","레쓰비","생수","생수","생수","이프로"]
@@ -180,7 +180,7 @@ while True:
     
 
 #실습. 자판기 프로그램 강사님
-vending_machine=["게토레이","게토레이","레쓰비","생수","생수","생수","이프로"]
+'''vending_machine=["게토레이","게토레이","레쓰비","생수","생수","생수","이프로"]
 
 while True:
     user_input=input("사용자를 선택하세요.(1.소비자 2.주인 3.종료)")
@@ -216,8 +216,5 @@ while True:
         break
     else:
         print("값을 잘못 입력하셨습니다.")
-            
-        
-
-
+'''
 
