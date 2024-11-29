@@ -279,6 +279,7 @@ print(fibonacci(3))'''
 def add(x,y):
     return x+y
 print(add(3,4))
+
 ##람다식
 add=lambda x,y:x+y
 print(add(4,5))'''
@@ -290,8 +291,8 @@ print((lambda x: x+1)(2))
 
 square=lambda x:x**2
 print(square(4))
-print((lambda x:x**2)(5))
-'''
+print((lambda x:x**2)(5))'''
+
 #매개변수 2개 람다식
 '''minus=lambda x,y:x-y
 print(minus(10,2))
@@ -333,7 +334,6 @@ print(f"{num}의 배수:{lists}")
 print(f"{num}의 개수는: {counts}")'''
 
 #실습. 함수 종합 프로그래밍
-
 weather_data=[
     ["2024-11-20","서울",15.2,0.0],
     ["2024-11-20","부산",18.4,0.0],
@@ -403,6 +403,7 @@ while True:
         print(printdata())
     elif x==6:
         print("종료")
+        break
     else:
         print("번호를 다시 입력해주세요")
 

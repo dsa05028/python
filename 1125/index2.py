@@ -30,14 +30,18 @@ print(result)'''
     return ["사과","바나나","복숭아"]
 
 print(fruits())
+'''
 
-def students():
+#딕셔너리 반환
+'''def students():
     return{
         "name":"홍길동",
         "age":20,
         "major":"컴퓨터공학"
     }
 print(students())'''
+
+
 
 #실습1.
 '''def add(num1,num2):
