@@ -46,7 +46,7 @@ p2.info()'''
 
 #getter, setter 데코레이터
 
-class Person:
+'''class Person:
     def __init__(self, name, age) -> None:
         self.__name=name
         self.__age=age
@@ -72,7 +72,7 @@ p1=Person("홍길동",20)
 print(p1.name) #괄호가 없어도 됨
 print(p1.age)
 
-p1.name="이몽룡"
-p1.age=25
+p1.name="이몽룡" #setter에 접근하여 이름 변경
+p1.age=25 #setter에 접근하여 나이 변경
 print(p1.name)
-print(p1.age)
+print(p1.age)'''

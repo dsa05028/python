@@ -106,12 +106,12 @@ rand=1000+math.floor(random.random()*9000)
 print(rand)'''
 
 # 실습. 로또 번호 뽑기
-'''import random
+import random
 
 lotto_num=list(i for i in range(1,46))
 lotto=random.sample(lotto_num,6) #범위 내 중복 제외하고 여러 개 난수를 생성
 print(sorted(lotto))
-'''
+
 
 # 실습. 로또 번호 뽑기 강사님
 '''import random
@@ -197,7 +197,7 @@ print(f"평균 단어당 입력 시간:{avg}")
 '''
 
 #실습.타자연습게임
-import time
+'''import time
 import random
 
 start=time.time()
@@ -241,5 +241,4 @@ def game():
             else:
                 print("오타! 다시입력")
 
-
-game()
+game()'''
