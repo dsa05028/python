@@ -99,7 +99,7 @@ df=pd.DataFrame(data)
 result=df.groupby("group")["value"].agg(["sum","mean","max"])
 print(result)'''
 
-data={
+'''data={
     "group":["A","A","B","B","C"],
     "value1":[10,20,30,40,50],
     "value2":[5,15,25,35,45]
@@ -115,4 +115,5 @@ df=pd.DataFrame(data)
 #     "value2":["mean","sum"]
 # })
 result=df.groupby("group").filter(lambda x :x["value1"].sum()>30)
-print(result)
+print(result)'''
+

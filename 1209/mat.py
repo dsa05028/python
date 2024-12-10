@@ -112,14 +112,16 @@ categories=["A","B","C"]
 values=[10,15,7]
 
 bars=plt.barh(categories,values,color="skyblue",edgecolor="red")
-
 for bar in bars:
     plt.text(bar.get_width()+0.5, #x좌표
              bar.get_y()+bar.get_height()/2,
              str(bar.get_width()),
              ha="right",va="center",color="green"         
             ) 
+plt.legend(bars,["A:2023","B:2024","C:2025"],ncol=3)
+plt.axvline(x=values[2],linestyle="--") #기준선
 plt.title("bar graph practice",pad=20)
 plt.xlabel("categories")
 plt.ylabel("values")
-plt.show()
+# plt.show() #창띄우기
+plt.savefig("./1209/graph.jpg",format="jpg") #저장
