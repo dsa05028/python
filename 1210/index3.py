@@ -19,7 +19,7 @@ import matplotlib.pyplot as plt
 # plt.show()
 
 
-# flights=sns.load_dataset('flights')
+flights=sns.load_dataset('flights')
 
 #연도별 승객수의 평균을 꺽은선 그래프로 나타내시오.강사님 ver
 # avgpassenger=flights.groupby("year")["passengers"].mean().reset_index()
@@ -30,17 +30,19 @@ import matplotlib.pyplot as plt
 # plt.show()
 
 #연도와 월별 승객 수를 히트맵으로 시각화하세요.강사님 ver
-# pivot=flights.pivot(index="month",columns="year",values="passengers")
+pivot=flights.pivot(index="month",columns="year",values="passengers")
+print(pivot)
 # sns.heatmap(pivot,annot=True,fmt="d",annot_kws={"size":7})
 # plt.show()
 
 #특정연도(예:1958)의 월별 승객 수를 막대 그래프로 나타내세요.강사님 ver
 # passengers_1958=flights[flights["year"]==1958]
+# print(passengers_1958)
 # sns.barplot(data=passengers_1958,x="month",y="passengers")
 # plt.show()
 
 # titanic
-titanic=sns.load_dataset("titanic")
+# titanic=sns.load_dataset("titanic")
 # print(titanic.head())
 
 # #탑승 클래스와 생존 여부 간의 관계를 catplot으로 시각화.강사님 ver
@@ -48,5 +50,6 @@ titanic=sns.load_dataset("titanic")
 # plt.show()
 
 #나이의 분포를 생존여부에 따라 kdeplot으로 시각화하세요. 강사님 ver
-sns.kdeplot(data=titanic,x="age",hue="survived",fill=True)
-plt.show()
+# sns.kdeplot(data=titanic,x="age",hue="survived",fill=True)
+# plt.show()
+
