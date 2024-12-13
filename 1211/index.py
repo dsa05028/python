@@ -27,4 +27,6 @@ sns.barplot(x="am",y="hp",data=avg_am)
 # print(avg_mpg1)
 # sns.heatmap(x="gear",y="mpg")
 
+
+
 plt.show()

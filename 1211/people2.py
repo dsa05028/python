@@ -3,29 +3,25 @@ import matplotlib.pyplot as plt
 import pandas as pd
 from matplotlib import font_manager
 
-import os
-  # 경로에 파일이 있으면 True, 없으면 False
-
+#한글 폰트 설정 : 폰트 파일 경로>
 path='C:\\Users\\HYOJEONG\\AppData\\Local\\Microsoft\\Windows\\Fonts\\AppleSDGothicNeoL.ttf'
 font=font_manager.FontProperties(fname=path).get_name()
 plt.rc("font",family=font)
 
+#csv파일 불러오기
 file_name="./1211/202411_202411_연령별인구현황_월간 (2).csv"
 data=pd.read_csv(file_name,encoding="EUC-KR")
 
-
+#column 추출 : 지역명 input->'행정구역'>'지역명'->column 추출
 region_name=input("검색하고 싶은 지역명을 입력하세요:")
 data=data.rename(columns={"행정구역":"지역명"})
 male_columns = [col for col in data.columns if "남" in col and "세" in col]
 female_columns = [col for col in data.columns if "여" in col and "세" in col]
 print(female_columns)
+
 #숫자변환
 for col in male_columns + female_columns:
     data[col] = data[col].astype(str).str.replace(",", "").astype(int)
-#필터링
-#contains():문자열 데이터 필터링할때 혹은 특정 패턴을 찾을때 사용
-#na:NaN(결측값)을 포함할지 결정, 기본값이 true
-#case:영문의 대소문자 구분, 기본값이 true
 
 region_data=data[data["지역명"].str.contains(region_name,na=False)]
 print(region_data)

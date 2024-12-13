@@ -73,14 +73,14 @@ import matplotlib.pyplot as plt
 # plt.show()
 
 #특정연도(예:1958)의 월별 승객 수를 막대 그래프로 나타내세요.
-flights=sns.load_dataset('flights')
-passengers_1958=flights.loc[flights["year"]==1958]
-# print(passengers_1958.head())
-plt.bar(data=passengers_1958,x="month",height="passengers")
-plt.title("Monthly passenger numbers in 1958")
-plt.xlabel("month")
-plt.ylabel("passengers")
-plt.show()
+# flights=sns.load_dataset('flights')
+# passengers_1958=flights.loc[flights["year"]==1958]
+# # print(passengers_1958.head())
+# plt.bar(data=passengers_1958,x="month",height="passengers")
+# plt.title("Monthly passenger numbers in 1958")
+# plt.xlabel("month")
+# plt.ylabel("passengers")
+# plt.show()
 
 #titanic
 # titanic=sns.load_dataset("titanic")

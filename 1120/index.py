@@ -114,6 +114,6 @@ print("True면 짝수, False는 홀수",x==0)'''
 a=num%2==0
 print("True면 짝수, False는 홀수", a)'''
 
-x=5
-y=x%2==0
-print("True면 짝수, False면 홀수:",y)
+# x=5
+# y=x%2==0
+# print("True면 짝수, False면 홀수:",y)
